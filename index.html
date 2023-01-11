@@ -63,6 +63,41 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button class="close__btn modal-close" type="button" data-modal-close>X</button>
+
+            <form class="folmular" name="users_data_folmular" autocomplete="off">
+              <p class="folmular__header"> Zostaw swoje dane w formularzu poniżej </p>
+
+              <label class="folmular__title">
+                Imie
+                <input class="folmular__item" type="text" name="username" />
+              </label>
+
+              <label class="folmular__title">
+                Telefon
+                <input class="folmular__item" type="password" name="password" minlength="5" maxlength="12" />
+              </label>
+
+              <label class="folmular__title">
+                Email
+                <input class="folmular__item" type="email" name="email" placeholder="example@mail.com">
+              </label>
+
+              <label class="folmular__title">
+                Komentarz
+                <textarea class="folmular__item-textarea" name="comment" rows="5"
+                  placeholder="Wprowadź tekst"></textarea>
+              </label>
+
+              <label class="folmular__checkbox">
+                <input class="folmular__checkbox-item" type="checkbox" name="statue_and_policy"
+                  value="statue_and_policy" checked />
+                Oświadczam iż akceptuję&nbsp; <a class="folmular__link" href="#" target="_blank"> Regulamin </a>
+                &nbsp;i&nbsp;
+                <a class="folmular__link" href="#" target="_blank"> Politykę Prywatności. </a>
+              </label>
+
+              <button class="folmular__btn-send" type="submit">Wyślij</button>
+            </form>
           </div>
         </div>
       </div>
@@ -408,7 +443,7 @@
             zapisz się do newslettera
             <input class="newsletter__item" type="email" name="email" placeholder="E-mail" />
           </label>
-          <button class="newsletter__btn" type="submit">Submit</button>
+          <button class="newsletter__btn" type="submit">Zapisz się</button>
         </form>
 
       </div>
